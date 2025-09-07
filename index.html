@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Forside</title>
+    <style>
+      body {
+        font-family: "Times New Roman", Times, serif;
+        margin: 0;
+        padding: 0;
+        background: #211476;
+      }
+      header h1 {
+        font-family: "Pacifico", cursive;
+        color: #fdfbfb;
+      }
+      header,
+      nav,
+      main,
+      footer {
+        padding: 1em;
+      }
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+      }
+      nav ul li {
+        flex: 1 1 auto;
+      }
+      nav a {
+        text-decoration: none;
+        color: #fdfcfc;
+        font-weight: bold;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 1em 0;
+      }
+      .small-img {
+        width: 600px;
+        height: auto;
+      }
+      .boks {
+        background: #2196f3;
+        border: 2px solid #1565c0;
+        color: #fff;
+        border-radius: 8px;
+        padding: 0.5em;
+        margin-bottom: 0.5em;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+        max-width: 100%;
+        box-sizing: border-box;
+      }
+      @media (max-width: 600px) {
+        header,
+        nav,
+        main,
+        footer {
+          padding: 0.5em;
+        }
+        h1,
+        h2,
+        h3,
+        h4 {
+          font-size: 1.2em;
+        }
+        nav ul {
+          flex-direction: column;
+          gap: 0.5em;
+        }
+        .boks {
+          margin-left: 0;
+          margin-right: 0;
+          max-width: 100%;
+        }
+      }
+      footer {
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Mit Website</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Forside</a></li>
+        <li><a href="min_computer.html">Min computer</a></li>
+        <li><a href="operativsystemer.html">Operativsystemer</a></li>
+        <li><a href="komponenter.html">Komponenter</a></li>
+        <li><a href="galleri.html">Galleri</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="boks">
+        <h2>Computere</h2>
+        <p>
+          Et site om computeren med alt fra dens historie til dens
+          specifikationer og mine personlige præferencer, når det gælder
+          computere og computerudstyr.
+        </p>
+        <img src="billeder/computer-cutout.webp" alt="" class="small-img" />
+      </div>
+
+      <div class="boks">
+        <h3>Stats</h3>
+        <p>
+          Ni ud af ti familier ejer i 2022 en eller flere smartphones, mens knap
+          seks ud af ti familier har en tablet-pc liggende. Hele 94 procent ejer
+          en personlig computer, hvoraf fire ud af ti anvender Windows som deres
+          primære operativsystem. Personlig computer 94% Windows 40% Tablet 56%
+          Smartphone 93%
+        </p>
+        <img src="billeder/computer-old.webp" alt="" />
+      </div>
+    </main>
+    <footer>&copy; 2025 Mit Website</footer>
+  </body>
+</html>
